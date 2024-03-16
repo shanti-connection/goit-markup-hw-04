@@ -54,6 +54,7 @@ padding-bottom: 120px;
 .header{
     background: #fff;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .visually-hidden {
@@ -109,6 +110,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-item {
@@ -159,6 +161,7 @@ color: #404bbf
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link:hover,
@@ -170,12 +173,14 @@ color: #404bbf
 .hero{
 background: #2e2f42;
 padding: 188px 0;
+margin: 0 auto;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
 ),
 url(../images/people-office.jpg);
 background-repeat: no-repeat;
-background-position: 50% 50%;
-background-size: 1440px;
+background-position: center;
+background-size: cover;
+max-width: 1440px;
 }
 
 .hero-header{
@@ -206,6 +211,7 @@ background-size: 1440px;
     display: block;
     margin: 0 auto;
     margin-top: 48px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero:hover,
@@ -239,6 +245,7 @@ margin-right: 24px;
     width: 264px;
     height: 112px;
     background: #f4f4fd;
+    margin-bottom: 8px;
 }
 
 .about-item-title{
@@ -247,7 +254,6 @@ margin-right: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .about-item-text{
@@ -307,6 +313,9 @@ padding: 32px 0;
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-members-img{
@@ -394,6 +403,11 @@ transform: translateY(0);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.products-list-item:hover{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-title{
     padding-top: 120px;
 }
@@ -432,8 +446,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 32px 16px;
 }
 
-.additional-products-cover{
-font-weight: 400;
+.additional-products-cover {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -442,8 +456,9 @@ font-weight: 400;
     position: absolute;
     top: 0;
     height: 100%;
-    padding: 40px 32px 164px 32px;
+    padding: 40px 32px;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 /** =============FOOTER================= */
@@ -456,6 +471,10 @@ padding: 100px 0;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    }
+
+.footer-logo-container{
+    margin-right: 120px;
     }
 
 .footer-logo{
@@ -484,7 +503,7 @@ font-weight: 400;
 }
 
 .social-media-container{
-    margin-left: 120px;
+
 }
 
 .social-media-text{
